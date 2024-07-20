@@ -33,7 +33,7 @@ console.log(appleOrangeJuice);
 
 const num = Number('5');
 console.log(num);
-*/
+
 
 // Function declaration
 function calcAge1(birthYear) {
@@ -62,6 +62,40 @@ const yearsUntilRetirement = (birthYear, firstName) => {
   const retirement = 60 - age;
   //   return retirement;
   return `${firstName} retires in ${retirement} years`;
+};
+
+console.log(yearsUntilRetirement(1996, 'Nikhil'));
+console.log(yearsUntilRetirement(2000, 'Sanket'));
+*/
+
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+
+  const orangePieces = cutFruitPieces(oranges);
+
+  const juice = `Juice with ${applePieces} piece of apple and ${orangePieces} pieces of orange.`;
+  return juice;
+}
+
+console.log(fruitProcessor(2, 3));
+
+const calcAge = function (birthYear) {
+  return 2024 - birthYear;
+};
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = calcAge(birthYear);
+  const retirement = 60 - age;
+
+  if (retirement > 0) {
+    return retirement;
+  } else {
+    return -1;
+  }
 };
 
 console.log(yearsUntilRetirement(1996, 'Nikhil'));
