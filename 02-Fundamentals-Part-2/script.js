@@ -66,7 +66,7 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1996, 'Nikhil'));
 console.log(yearsUntilRetirement(2000, 'Sanket'));
-*/
+
 
 function cutFruitPieces(fruit) {
   return fruit * 4;
@@ -100,3 +100,50 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1996, 'Nikhil'));
 console.log(yearsUntilRetirement(2000, 'Sanket'));
+*/
+
+const friend1 = 'Sanket';
+const friend2 = 'Nikhil';
+const friend3 = 'Manas';
+
+const friends = ['Sanket', 'Nikhil', 'Manas'];
+console.log(friends);
+
+const y = new Array(1991, 1984, 2008, 2020);
+console.log(y);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Tej';
+console.log(friends);
+
+// friends = ['Bob', 'Alice'];
+
+const firstName = 'Nikhil';
+const nikhil = [firstName, 'Kukreja', 2024 - 1996, 'Developer', friends];
+console.log(nikhil);
+console.log(nikhil.length);
+
+// Exercise
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+
+console.log(age1, age2, age3);
+
+const ages = [
+  calcAge(years[0]),
+  calcAge(years[1]),
+  calcAge(years[years.length - 1]),
+];
+console.log(ages);
