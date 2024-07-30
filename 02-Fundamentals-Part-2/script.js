@@ -100,7 +100,7 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1996, 'Nikhil'));
 console.log(yearsUntilRetirement(2000, 'Sanket'));
-*/
+
 
 const friend1 = 'Sanket';
 const friend2 = 'Nikhil';
@@ -147,3 +147,34 @@ const ages = [
   calcAge(years[years.length - 1]),
 ];
 console.log(ages);
+*/
+
+// Add elements
+const friends = ['Sanket', 'Nikhil', 'Manas'];
+const newLength = friends.push('Jatin'); // Pushes the element at the end of the array
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('Simran'); // To add element beginning of the array
+console.log(friends);
+
+// Remove elements
+friends.pop(); // Last
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift(); // First
+console.log(friends);
+
+console.log(friends.indexOf('Nikhil'));
+console.log(friends.indexOf('Bob'));
+friends.push(23);
+
+console.log(friends.includes('Nikhil'));
+console.log(friends.includes('Bob'));
+console.log(friends.includes(23));
+
+if (friends.includes('Nikhil')) {
+  console.log('You have a friend called Nikhil');
+}
