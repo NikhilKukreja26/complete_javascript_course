@@ -147,7 +147,7 @@ const ages = [
   calcAge(years[years.length - 1]),
 ];
 console.log(ages);
-*/
+
 
 // Add elements
 const friends = ['Sanket', 'Nikhil', 'Manas'];
@@ -178,3 +178,37 @@ console.log(friends.includes(23));
 if (friends.includes('Nikhil')) {
   console.log('You have a friend called Nikhil');
 }
+
+*/
+
+const nikhilArray = [
+  'Nikhil',
+  'Kukreja',
+  2024 - 1996,
+  'Developer',
+  ['Sanket', 'Nikhil', 'Manas'],
+];
+
+const nikhil = {
+  firstName: 'Nikhil',
+  lastName: 'Kukreja',
+  age: 2024 - 1996,
+  job: 'Developer',
+  friends: ['Sanket', 'Nikhil', 'Manas'],
+};
+
+// console.log(nikhilArray);
+console.log(nikhil);
+
+console.log(nikhil.lastName);
+console.log(nikhil['lastName']);
+
+const nameKey = 'Name';
+console.log(nikhil['first' + nameKey]);
+console.log(nikhil['last' + nameKey]);
+
+const interestedIn = prompt(
+  'What do you want know about Nikhil? Choose between firstName, lastName, age, job, and friends'
+);
+
+console.log(nikhil[interestedIn]);
