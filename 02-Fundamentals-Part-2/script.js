@@ -211,4 +211,19 @@ const interestedIn = prompt(
   'What do you want know about Nikhil? Choose between firstName, lastName, age, job, and friends'
 );
 
-console.log(nikhil[interestedIn]);
+if (nikhil[interestedIn]) {
+  console.log(nikhil[interestedIn]);
+} else {
+  console.log(
+    'Wrong request! Choose between firstName, lastName, age, job, and friends'
+  );
+}
+
+nikhil.location = 'Ghatkopar';
+nikhil['twitter'] = '@nikhilkukreja26';
+
+console.log(nikhil);
+
+console.log(
+  `${nikhil.firstName} has ${nikhil.friends.length} friends, and his best friend is called ${nikhil.friends[0]}`
+);
