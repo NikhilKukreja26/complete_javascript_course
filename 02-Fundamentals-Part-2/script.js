@@ -266,7 +266,7 @@ console.log(nikhil.age);
 console.log(nikhil.age);
 
 console.log(nikhil.getSummary());
-*/
+
 
 // console.log('Lifting weights repetition 1 🏋️‍♀️');
 // console.log('Lifting weights repetition 2 🏋️‍♀️');
@@ -281,4 +281,50 @@ console.log(nikhil.getSummary());
 
 for (let rep = 1; rep <= 10; rep++) {
   console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+}
+*/
+
+const nikhil = [
+  'Nikhil',
+  'Kukreja',
+  2024 - 1996,
+  'Developer',
+  ['Sanket', 'Nikhil', 'Manas'],
+  true,
+];
+
+const types = [];
+
+for (let i = 0; i < nikhil.length; i++) {
+  console.log(nikhil[i], typeof nikhil[i]);
+
+  // Filling types array
+  // types[i] = typeof nikhil[i];
+  types.push(typeof nikhil[i]);
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+
+// continue and break
+console.log('--- ONLY STRINGS ---');
+for (let i = 0; i < nikhil.length; i++) {
+  if (typeof nikhil[i] !== 'string') continue;
+
+  console.log(nikhil[i], typeof nikhil[i]);
+}
+
+console.log('--- BREAK WITH NUMBER ---');
+for (let i = 0; i < nikhil.length; i++) {
+  if (typeof nikhil[i] === 'number') break;
+
+  console.log(nikhil[i], typeof nikhil[i]);
 }
